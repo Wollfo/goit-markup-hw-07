@@ -45,7 +45,7 @@
       <section class="hero section--hero">
         <div class="conteiner conteiner--hero">
           <h1 class="hero__text">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="btn-primary-type" data-modal-open >Замовити послугу</button>
+          <button type="button" class="hero__btn" data-modal-open >Замовити послугу</button>
         </div>
       </section>
       <!-- Преимущества -->
@@ -349,7 +349,7 @@
         </div>
         <div class="footer-form">
         <b class="footer-form__text">Підпишіться на розсилку</b>
-        <div class="footer-form__box">
+        <form class="footer-form__box">
           <input type="text"  class="footer-form__input" name="email" placeholder="E-mail" >
           <button class="button footer-btn"> 
            Підписатися
@@ -358,7 +358,7 @@
            </svg>
 
           </button>
-        </div>
+        </form>
         </div>
         </div>
       </div>
@@ -369,9 +369,9 @@
         <button data-modal-close class="modal__btn-close"><svg width="11px" height="11px" class="modal__icon">
           <use href="./image/icons.svg#icon-close-black-18dp-2-1"></use>
         </svg></button>
-        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+        <b class="modal__title">Залиште свої дані, ми вам передзвонимо</b>
         <div class="feedback">
-            <label for="user-name">Ім'я</label>
+            <label class="feedback__name" for="user-name">Ім'я</label>
             <div class="feedback__box">
                 <input type="text" name="user-name" id="user-name" class="feedback__input">
                <span class="feedback__icon"> 
@@ -383,7 +383,7 @@
         </div>
     
         <div class="feedback">
-            <label for="user-tel">Телефон</label>
+            <label class="feedback__name"   for="user-tel">Телефон</label>
             <div class="feedback__box">
                 <input type="tel" name="user-tel" id="user-tel" class="feedback__input">
                <span class="feedback__icon"> 
@@ -391,10 +391,11 @@
                 <use href="./image/icons.svg#icon-phone"></use>
                 </svg>
                </span>
+               </div>
         </div>
     
         <div class="feedback">
-            <label for="user-email">Пошта</label>
+            <label class="feedback__name"  for="user-email">Пошта</label>
             <div class="feedback__box">
                 <input type="email" name="user-email" id="user-email" class="feedback__input">
                <span class="feedback__icon"> 
@@ -405,15 +406,15 @@
            </div>
         </div>
         
-           <div class="feedback">
-            <label for="comment">Коментар</label>
-              <textarea name="comment" id="comment" placeholder="Введіть текст" class="feedback__input"></textarea >
+           <div class="feedback comment">
+            <label class="feedback__name" for="comment">Коментар</label>
+              <textarea name="comment" id="comment" placeholder="Введіть текст" class="feedback__input feedback__input--textarea"></textarea >
           </div>
 
           <div class="policy">
                <input type="checkbox" name="user-policy" id="user-policy" class="policy__checkbox visually-hidden" value="accept">
                <label class="policy__text" for="user-policy" name="user-policy">
-               <span >
+               <span class="policy__box">
               <svg class=policy__icon width="11px" height="8px">
                <use href="./image/icons.svg#icon-check"></use>
               </svg>

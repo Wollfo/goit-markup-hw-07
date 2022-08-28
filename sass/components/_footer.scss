@@ -41,19 +41,28 @@
     letter-spacing: 0.03em;
   
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+    &:hover,
+    &:focus{
+      color: var(--accent-color);
+    }
   }
   .footer-contact__item {
     display: block;
     margin-bottom: 9px;
-  }
-  .footer-contact__item:last-child {
-    margin-bottom: 0;
-  }
 
-  .footer-contact__link:hover,
-  .footer-contact__link:focus {
-    color: var(--accent-color);
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
+  // .footer-contact__item:last-child {
+  //   margin-bottom: 0;
+  // }
+
+  // .footer-contact__link:hover,
+  // .footer-contact__link:focus {
+  //   color: var(--accent-color);
+  // }
 
   .footer-social__text{
     margin-bottom: 20px;
@@ -78,6 +87,17 @@
     border: none;
     
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+    &:hover,
+    &:focus{
+      background-color: var(--accent-color);
+    }
+    &:hover .footer-social__icon,
+    &:focus .footer-social__icon {
+  fill: var(--main-light-color);
+  }
+
+    
   }
   .footer-social__list{
     display: flex;
@@ -90,15 +110,15 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
   
   }
-  .footer-social__link:hover,
-  .footer-social__link:focus{
-    background-color: var(--accent-color);
-  }
+  // .footer-social__link:hover,
+  // .footer-social__link:focus{
+  //   background-color: var(--accent-color);
+  // }
   
-  .footer-social__link:hover .footer-social__icon,
-  .footer-social__link:focus .footer-social__icon {
-  fill: var(--main-light-color);
-  }
+  // .footer-social__link:hover .footer-social__icon,
+  // .footer-social__link:focus .footer-social__icon {
+  // fill: var(--main-light-color);
+  // }
 
  .address {
 font-style: normal;
@@ -107,8 +127,7 @@ font-style: normal;
   
 .footer-form{
     width: 570px;
-    height: 200px;
-    margin-left: 93px;
+    margin-left: auto;
     
   }
   .footer-form__text{
@@ -138,11 +157,15 @@ font-style: normal;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
   color: var(--main-light-color);
-  }
-  
-  .footer-form__input:focus{
+
+  &:focus{
     border-color: var(--accent-color);
   }
+  }
+  
+  // .footer-form__input:focus{
+  //   border-color: var(--accent-color);
+  // }
   
   .footer-btn{
     display: flex;
