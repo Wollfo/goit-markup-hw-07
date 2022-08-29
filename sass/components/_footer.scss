@@ -1,4 +1,4 @@
-.section--footer {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -24,6 +24,7 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    padding: 0;
   }
   .address__text {
     display: block;
@@ -177,6 +178,7 @@ font-style: normal;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   
   color: var(--main-light-color);
   font-family: Roboto;

@@ -64,8 +64,7 @@
 
   &:hover .modal__icon,
   &:focus .modal__icon {
-    background-color: var(--accent-color);
-    fill: var(--main-light-color);
+    fill: var(--accent-color);
   }
 }
 // .modal__btn-close:hover .modal__icon,
@@ -74,21 +73,10 @@
 //   fill: var(--main-light-color);
 // }
 
-.modal__title {
-  display: block;
-  margin-bottom: 12px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--main-title-color);
-}
 
 .feedback {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .feedback.comment {
@@ -96,6 +84,7 @@
 }
 .feedback__box {
   position: relative;
+  margin-bottom: 10px;
 }
 .feedback__input {
   width: 100%;
@@ -133,7 +122,6 @@
   width: 100%;
   height: 120px;
   padding: 12px;
-  margin-bottom: 20px;
 
   font-weight: 400;
   font-size: 12px;
@@ -167,6 +155,8 @@
 .policy {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 .policy__text {
@@ -216,10 +206,9 @@
 
 .policy__link {
   font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  padding-left: 2px;
+  margin-left: 3px;
   border-bottom: 2px solid currentColor;
 
   line-height: 0.85;
