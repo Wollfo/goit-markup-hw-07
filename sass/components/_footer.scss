@@ -1,4 +1,4 @@
-.footer {
+.section--footer {
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -15,17 +15,7 @@
     text-decoration-color: none;
   }
   
-  .logo--footer {
-    display: block;
-    margin-bottom: 20px;
-    color: var(--main-light-color);
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    padding: 0;
-  }
+  
   .address__text {
     display: block;
     margin-bottom: 9px;
@@ -96,10 +86,9 @@
     &:hover .footer-social__icon,
     &:focus .footer-social__icon {
   fill: var(--main-light-color);
+  }   
   }
-
-    
-  }
+  
   .footer-social__list{
     display: flex;
     justify-content: center;

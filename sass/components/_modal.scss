@@ -40,6 +40,7 @@
   right: 0;
   width: 30px;
   height: 30px;
+  padding: 6px;
 
   background-color: var(--primary-background-color);
   border-radius: 50%;
@@ -67,13 +68,12 @@
     fill: var(--accent-color);
   }
 }
+
 // .modal__btn-close:hover .modal__icon,
 // .modal__btn-close:focus .modal__icon{
 //   background-color: var(--accent-color);
 //   fill: var(--main-light-color);
 // }
-
-
 
 .feedback {
   margin-bottom: 20px;
@@ -182,16 +182,19 @@
 }
 
 .policy__checkbox {
-  &:checked + .policy__text .policy__box,
-  &:focus + .policy__text .policy__box {
+  &:checked + .policy__text .policy__box {
     border: none;
     background-color: var(--accent-color);
   }
-  &:checked + .policy__text .policy__icon,
-  &:focus + .policy__text .policy__icon {
+  &:checked + .policy__text .policy__icon {
     fill: var(--main-light-color);
   }
+  &:focus + .policy__text .policy__box {
+    border: 2px solid var(--accent-color);
+  }
 }
+
+//  &:focus + .policy__text .policy__icon {
 
 // .policy__checkbox:checked + .policy__text .policy__box,
 // .policy__checkbox:focus + .policy__text .policy__box{

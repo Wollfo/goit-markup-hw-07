@@ -308,6 +308,18 @@ img {
   color: var(--accent-color);
 }
 
+.logo--footer {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--main-light-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  padding: 0;
+}
+
 .hero {
   max-width: 1600px;
   height: 600px;
@@ -525,7 +537,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer {
+.section--footer {
   padding-top: 60px;
   padding-bottom: 60px;
   color: var(--main-light-color);
@@ -546,18 +558,6 @@ img {
   text-decoration: none;
   -webkit-text-decoration-color: none;
           text-decoration-color: none;
-}
-
-.logo--footer {
-  display: block;
-  margin-bottom: 20px;
-  color: var(--main-light-color);
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  padding: 0;
 }
 
 .address__text {
@@ -813,6 +813,7 @@ img {
   right: 0;
   width: 30px;
   height: 30px;
+  padding: 6px;
   background-color: var(--primary-background-color);
   border-radius: 50%;
   border: 1px solid var(--border-color);
@@ -957,12 +958,15 @@ img {
   fill: transparent;
 }
 
-.policy__checkbox:checked + .policy__text .policy__box, .policy__checkbox:focus + .policy__text .policy__box {
+.policy__checkbox:checked + .policy__text .policy__box {
   border: none;
   background-color: var(--accent-color);
 }
-.policy__checkbox:checked + .policy__text .policy__icon, .policy__checkbox:focus + .policy__text .policy__icon {
+.policy__checkbox:checked + .policy__text .policy__icon {
   fill: var(--main-light-color);
+}
+.policy__checkbox:focus + .policy__text .policy__box {
+  border: 2px solid var(--accent-color);
 }
 
 .policy__link {
